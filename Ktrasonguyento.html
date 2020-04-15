@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập giá trị numbers ");
+
+    if (num < 2) {
+        document.write(num + " không là số nguyên tố")
+    }
+    if (num == 2) {
+        document.write(num + " là số nguyên tố ")
+    } else {
+        let isPrime = true;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                isPrime = false;
+            }
+        }
+        if (isPrime == true) {
+            document.write(num + " là số nguyên tố ")
+        } else {
+            document.write(num + " không là số nguyên tố");
+
+        }
+    }
+
+</script>
+
+</body>
+</html>
